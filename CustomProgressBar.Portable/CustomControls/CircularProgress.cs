@@ -20,18 +20,17 @@ namespace CustomProgressBar.CustomControls
 			set { SetValue (IndeterminateProperty, value); }
 		}
 
-
-		public static readonly BindableProperty ProgressProperty = 
+		public static readonly BindableProperty ProgressBlahProperty = 
 			BindableProperty.Create<CircularProgress,float> (
-				p => p.Progress, 0);
+				p => p.ProgressBlah, 0);
 
 		/// <summary>
 		/// Gets or sets the current progress
 		/// </summary>
 		/// <value>The progress.</value>
-		public float Progress {
-			get { return (float)GetValue (ProgressProperty); }
-			set { SetValue (ProgressProperty, value); }
+		public float ProgressBlah {
+			get { return (float)GetValue (ProgressBlahProperty); }
+			set { SetValue (ProgressBlahProperty, value); }
 		}
 
 		public static readonly BindableProperty MaxProperty = 

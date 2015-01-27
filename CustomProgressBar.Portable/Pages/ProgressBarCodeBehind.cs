@@ -21,8 +21,8 @@ namespace CustomProgressBar
 			var decrease = new Button { Text = "-5 cbehind" };
 			var indeterminate = new Button { Text = "Indeterminate" };
 
-			increase.Clicked += (sender, args) => progressBar.Progress += 5;
-			decrease.Clicked += (sender, args) => progressBar.Progress -= 5;
+			increase.Clicked += (sender, args) => progressBar.ProgressBlah += 5;
+			decrease.Clicked += (sender, args) => progressBar.ProgressBlah -= 5;
 
 			indeterminate.Clicked += (sender, args) => {
 				progressBar.Indeterminate = !progressBar.Indeterminate;

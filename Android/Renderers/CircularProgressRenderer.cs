@@ -25,7 +25,7 @@ namespace CustomProgressBar.Droid.Renderers
 
 			var progress = new HoloCircularProgressBar (Forms.Context) {
 				Max = Element.Max,
-				Progress = Element.Progress,
+				Progress = Element.ProgressBlah,
 				Indeterminate = Element.Indeterminate,
 				ProgressColor = Element.ProgressColor.ToAndroid (),
 				ProgressBackgroundColor = Element.ProgressBackgroundColor.ToAndroid (),
@@ -46,8 +46,8 @@ namespace CustomProgressBar.Droid.Renderers
 				
 			if (e.PropertyName == CircularProgress.MaxProperty.PropertyName) {
 				Control.Max = Element.Max;
-			} else if (e.PropertyName == CircularProgress.ProgressProperty.PropertyName) {
-				Control.Progress = Element.Progress;
+			} else if (e.PropertyName == CircularProgress.ProgressBlahProperty.PropertyName) {
+				Control.Progress = Element.ProgressBlah;
 			} else if (e.PropertyName == CircularProgress.IndeterminateProperty.PropertyName) {
 				Control.Indeterminate = Element.Indeterminate;
 			}else if (e.PropertyName == CircularProgress.ProgressBackgroundColorProperty.PropertyName) {

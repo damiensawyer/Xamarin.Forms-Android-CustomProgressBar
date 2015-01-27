@@ -29,7 +29,7 @@
 	         	WidthRequest="300" 
 	         	HeightRequest="300"
 	         	Indeterminate = "{Binding IsIndeterminate}"
-	         	Progress = "{Binding Progress}"
+	         	ProgressBlah = "{Binding Progress}"
 	         	ProgressColor = "{Binding ProgressColor}"
 	         	ProgressBackgroundColor = "{Binding ProgressBackgroundColor}"
 	         	IndeterminateSpeed = "{Binding Speed}"/>

@@ -9,8 +9,8 @@ namespace CustomProgressBar
 		public static Page GetMainPage ()
 		{	
 			// Note that you can either use XAML... or CodeBehind... or just inline. 
-			return new ProgressBarXAML ();
-			//return new ProgressBarCodeBehind ();
+			//return new ProgressBarXAML ();
+			return new ProgressBarCodeBehind ();
 
 //			var contentPage = new ContentPage {
 //				//Title = "Custom Progress Bar"
@@ -28,8 +28,8 @@ namespace CustomProgressBar
 //			var decrease = new Button { Text = "-5" };
 //			var indeterminate = new Button { Text = "Indeterminate" };
 //
-//			increase.Clicked += (sender, args) => progressBar.Progress += 5;
-//			decrease.Clicked += (sender, args) => progressBar.Progress -= 5;
+//			increase.Clicked += (sender, args) => progressBar.ProgressBlah += 5;
+//			decrease.Clicked += (sender, args) => progressBar.ProgressBlah -= 5;
 //
 //			indeterminate.Clicked += (sender, args) => {
 //				progressBar.Indeterminate = !progressBar.Indeterminate;
@@ -58,7 +58,7 @@ namespace CustomProgressBar
 //			contentPage.Content = mainStack;
 //
 //			return contentPage;
-			//return new NavigationPage (contentPage);
+//			return new NavigationPage (contentPage);
 
 		}
 	}

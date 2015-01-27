@@ -28,7 +28,6 @@ namespace CustomProgressBar
 
 		private float progress = 0.0f;
 
-
 		/// <summary>
 		/// Gets or sets the progress.
 		/// </summary>
@@ -43,7 +42,6 @@ namespace CustomProgressBar
 		}
 
 		private double speed = 100;
-
 
 		/// <summary>
 		/// Gets or sets the speed f.
