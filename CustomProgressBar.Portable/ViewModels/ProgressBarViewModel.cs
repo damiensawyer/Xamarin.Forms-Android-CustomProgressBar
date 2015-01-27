@@ -4,6 +4,10 @@ using Xamarin.Forms;
 
 namespace CustomProgressBar
 {
+	/// <summary>
+	/// Note that this view model is only used in the XAML implementation. The ProgressBarCodeBehind version (which can be used instead of
+	/// the XAML version) doesn't need this.
+	/// </summary>
 	public class ProgressBarViewModel : INotifyPropertyChanged
 	{
 		public ProgressBarViewModel ()
@@ -39,7 +43,6 @@ namespace CustomProgressBar
 		}
 
 		private double speed = 100;
-
 
 
 		/// <summary>
