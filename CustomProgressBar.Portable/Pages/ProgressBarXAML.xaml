@@ -13,10 +13,10 @@
 	        	Orientation="Horizontal"
 	        	 HorizontalOptions="Center"
 	        	 Spacing = "10">
-				<Button Text ="-5" 
+				<Button Text ="-5 xaml" 
 						Command="{Binding AddProgressCommand}" 
 						CommandParameter="-5"/>
-				<Button Text ="+5" 
+				<Button Text ="+5 xaml" 
 						Command="{Binding AddProgressCommand}" 
 						CommandParameter="+5"/>
 				<Button Text ="Indeterminate" 

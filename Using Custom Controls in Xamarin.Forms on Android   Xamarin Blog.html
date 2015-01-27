@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://blog.xamarin.com/using-custom-controls-in-xamarin.forms-on-android/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Using Custom Controls in Xamarin.Forms on Android | Xamarin Blog</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=1240">
+        <link rel="stylesheet" type="text/css" href="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/screen.css">
+        <link rel="stylesheet" type="text/css" href="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/login.css">
+        <link rel="stylesheet" type="text/css" href="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/modal.css">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+        <link rel="stylesheet" type="text/css" href="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/style.css">
+        <link rel="pingback" href="http://blog.xamarin.com/xmlrpc.php">
+        <link rel="shortcut icon" href="http://xamarin.com/favicon.ico?2">
+        <link rel="alternate" type="application/rss+xml" title="Xamarin Blog » Feed" href="http://blog.xamarin.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Xamarin Blog » Comments Feed" href="http://blog.xamarin.com/comments/feed/">
+<link rel="stylesheet" id="ssba-page-styles-css" href="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/page-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-ui-style-css" href="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/jquery-ui.css" type="text/css" media="all">
+<link rel="stylesheet" id="s2w-widget-css" href="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/s2w-style.css" type="text/css" media="all">
+<!-- Cool Video Gallery Script starts here --><!-- Cool Video Gallery Script ends here --><script type="text/javascript" async="" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/5244a493c9b752f600000087.js"></script><script type="text/javascript" async="" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/8721.js"></script><script type="text/javascript" async="" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/mixpanel-2.2.min.js"></script><script type="text/javascript" async="" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/analytics.min.js"></script><script type="text/javascript" async="" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/5244a493c9b752f600000087.js"></script><script type="text/javascript" async="" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/5244a493c9b752f600000087.js"></script><script async="" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/gtm.js"></script><script type="text/javascript" async="" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/ga.js"></script><script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/jquery.js"></script><style type="text/css"></style><style type="text/css"></style>
+<script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/jquery-migrate.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var s2wParams = {"s2wPOST":"http:\/\/blog.xamarin.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/subscribe2-widget-pro.js"></script>
+<script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/jquery.slideshow.js"></script>
+<script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/jquery.stripslashes.js"></script>
+<script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/external-tracking.min.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.xamarin.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.xamarin.com/wp-includes/wlwmanifest.xml">
+<link rel="prev" title="Contest: Ship an Amazon Fire Phone App" href="http://blog.xamarin.com/contest-build-an-amazon-fire-phone-app/">
+<link rel="next" title="Xamarin Studio and NuGet" href="http://blog.xamarin.com/xamarin-studio-and-nuget/">
+<meta name="generator" content="WordPress 3.9.1">
+<link rel="canonical" href="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog.html">
+<link rel="shortlink" href="http://blog.xamarin.com/?p=11573">
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+<!-- Cool Video Gallery Script starts here -->				<style type="text/css" media="screen">
+					#fancybox-left-ico {
+					 left: 20px;
+					}
+					#fancybox-right-ico {
+					 right: 20px;
+					 left: auto;
+					}
+				</style>
+						<script type="text/javascript">
+				jQuery(document).ready(function(){
+					if(jQuery('.slideContent').length != 0) {
+						jQuery('.slideContent').each(function() {
+							jQuery(this.id).s3Slider({
+						      timeOut: 7000,
+							  item_id: this.id
+						   });
+						});
+					}
+				});
+			</script>
+			<!-- Cool Video Gallery Script ends here -->
+			<style type="text/css">	#ssba {
+									}
+									#ssba img
+									{
+										width: 35px !important;
+										padding: 6px;
+										border:  0;
+										box-shadow: none !important;
+										display: inline;
+										vertical-align: middle;
+									}
+									#ssba, #ssba a
+									{
+										background: none;
+										font-size: 	20px;
+										color: 		#555753!important;
+									}</style><link rel="stylesheet" type="text/css" href="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/shCore.css"><link rel="stylesheet" type="text/css" href="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/shThemeDefault.css"><style type="text/css" id="syntaxhighlighteranchor"></style>
+<!-- Google Analytics Tracking by Google Analyticator 6.4.7.3: http://www.videousermanuals.com/google-analyticator/ -->
+<script type="text/javascript">
+                var analyticsFileTypes = [''];
+                            var analyticsSnippet = 'enabled';
+                var analyticsEventTracking = 'enabled';
+            </script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-23759232-10']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+	var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(66538917);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+})();
+var google_conversion_id = 1015730972;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "j0fWCOywugIQnKar5AM";
+var google_conversion_value = 0;
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = 'http://www.googleadservices.com/pagead/conversion.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+})();
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script><script type="text/javascript" async="" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/js"></script><script type="text/javascript" async="" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/conversion.js"></script>
+    <img src="http://ib.adnxs.com/seg?t=2&add=1038126" width="0" height="0" border="0" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 0px 0px;"><img src="http://ib.adnxs.com/seg?t=2&add=1622965" width="0" height="0" border="0" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 0px 0px;"><img src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/saved_resource" width="1" height="1" border="0"><script type="text/javascript" async="" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/munchkin.js"></script><img src="http://ib.adnxs.com/seg?t=2&add=1038126" width="0" height="0" border="0" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 0px 0px;"><img src="http://ib.adnxs.com/seg?t=2&add=1622965" width="0" height="0" border="0" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 0px 0px;"><img src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/saved_resource" width="1" height="1" border="0"><img src="http://ib.adnxs.com/seg?t=2&add=1038126" width="0" height="0" border="0" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 1px 1px;"><img src="http://ib.adnxs.com/seg?t=2&add=1622965" width="0" height="0" border="0" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 1px 1px;"><img src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/saved_resource" width="1" height="1" border="0"></head>
+    <body class="single single-post postid-11573 single-format-standard" data-format="large-desktop">
+        <!-- Google Tag Manager -->
+        <noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-57C4Z7"
+        height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-57C4Z7');</script>
+        <div id="top-container">
+<div id="global-header">
+    <div class="global-bar">
+        <div class="wrapper">
+            <h1 class="xamarin logo">
+                <a href="https://xamarin.com/">Xamarin</a>
+            </h1>
+            <div class="navigation">
+                <a class="label">
+                    <span class="menu">Menu</span>
+                    <span class="close icon"></span>
+                </a>
+                <ul>
+                    <li class="dropdown " data-hover="dropdown"><a data-toggle="" href="https://xamarin.com/products">Products</a>
+                        <script type="text/javascript">
+                            var preloadProductsIcons = new Image(); preloadProductsIcons.src = "//xamarin.com/content/images/structure/header/products-icons.svg";
+                        </script>
+                        <ul class="products-list" role="menu">
+                            <li>
+                                <ul>
+                                    <li class="platfrom"><a href="https://xamarin.com/platform">
+                                        Xamarin Platform
+                                        <small>C# on iOS, Android, Mac &amp; Windows</small>
+                                    </a></li>
+                                    <li class="test-cloud"><a href="https://xamarin.com/test-cloud">
+                                        Xamarin Test Cloud
+                                        <small>Test any app on hundreds of devices</small>
+                                    </a></li>
+                                    <li class="university"><a href="https://xamarin.com/university">
+                                        Xamarin University
+                                        <small>Unlimited, live mobile development training</small>
+                                    </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="all"><a href="https://xamarin.com/products">All Products</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="https://xamarin.com/customers">Customers</a></li>
+                    <li class=""><a href="https://store.xamarin.com/">Pricing</a></li>
+                    <li class=""><a href="http://developer.xamarin.com/">Developers</a></li>
+                    <li class="dropdown " data-hover="dropdown"><a href="https://xamarin.com/support" data-toggle="">Support</a>
+                        <ul role="menu">
+                            <li><a href="https://xamarin.com/support">Developer Support</a></li>
+                            <li><a href="https://xamarin.com/partners">Consulting Partners</a></li>
+                            <li><a href="https://xamarin.com/partners/services">Consulting Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="hide-on-mobile dropdown " data-hover="dropdown"><a data-toggle="" href="https://xamarin.com/resources">Resources</a>
+                        <ul role="menu">
+                            <li><a href="http://blog.xamarin.com/">Blog</a></li>
+                            <li><a href="https://xamarin.com/faq">FAQ</a></li>
+                            <li><a href="https://xamarin.com/partners">Partners</a></li>
+                            <li><a href="https://xamarin.com/resources/webinars">Webinars</a></li>
+                            <li><a href="https://xamarin.com/enterprise">Xamarin in the Enterprise</a></li>
+                            <li><a href="https://xamarin.com/about">About Xamarin</a></li>
+                        </ul>
+                    </li>
+                    <li class="show-on-mobile"><a href="http://blog.xamarin.com/">Blog</a></li>
+                    <li class="show-on-mobile"><a href="https://xamarin.com/about">About Xamarin</a></li>
+                    <li class="user dropdown" data-hover="dropdown"><a class="#" data-toggle="">                                 <img src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/avatar.php" alt="">Damien</a><ul role="menu">                                 <li class="user-details">                                     <strong>Damien Sawyer</strong>                                     <span class="email">damiensawyer@gmail.com</span>                                 </li><li><a href="https://store.xamarin.com/account/1184951/subscription">Manage Subscriptions</a></li><li><a href="https://store.xamarin.com/account/1184951/subscription/downloads">Install</a></li><li><a href="https://store.xamarin.com/account/1184951/subscription/computers">Computers</a></li><li><a href="https://store.xamarin.com/logout/1184951">Sign Out</a></li></ul></li>
+                    <li id="evolve-countdown">
+                        <span class="stripes"></span>
+                        <span class="stripes-hover"></span>
+                        <span class="stripes-bg"></span>
+                        <a href="https://evolve.xamarin.com/">
+                            <em><span id="evolve-countdown-days">79</span> days until</em> <strong>Evolve 2014</strong>
+                            <script type="text/javascript">
+                                // Calculate days left until Evolve 2014 Conference
+                                var today = new Date();
+                                today = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+                                var evolve_day = new Date(2014, 9, 6);
+                                var one_day = 1000 * 60 * 60 * 24;
+                                var days_left = Math.floor(Math.abs(evolve_day - today) / one_day);
+                                if (days_left < 1) {
+                                    days_left = '0';
+                                }
+                                document.getElementById('evolve-countdown-days').innerHTML = days_left;
+                            </script>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+<div id="container" class="covering">
+	<div class="main-page" id="blog-page">
+		<div class="content flush-padding">
+            <div class="columns with-sidebar">
+                <div class="first cell column-body">
+        			<div class="blog-posts single">
+        						<article id="post-11573" class="post-11573 post type-post status-publish format-standard hentry category-android category-xamarinforms">
+        							<hgroup>
+        								<aside class="avatar">
+        									<img alt="" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/7d1f32b86a6076963e7beab73dddf7ca" class="avatar avatar-200 photo" height="200" width="200">                                        </aside>
+                                        <span class="date">June 23, 2014</span>
+        								<h1><a href="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog.html" title="Permalink to Using Custom Controls in Xamarin.Forms on Android" rel="bookmark">Using Custom Controls in Xamarin.Forms on Android</a></h1>
+                                        <span class="author">By <a href="http://blog.xamarin.com/" title="Posts by James Montemagno" rel="author">James Montemagno</a></span>
+        							</hgroup>
+        							<div class="entry-content rich-content">
+        								        									<p>With over 40 pages, layouts, and controls built into the Xamarin.Forms library, you are sure to find something to fit your needs when building out native mobile apps on iOS, Android, and Windows Phone. One of the key features that I love about Xamarin.Forms is that you are able to not only <a href="http://developer.xamarin.com/guides/cross-platform/xamarin-forms/custom-renderer/" title="How-to Customize Xamarin.Forms Controls" target="_blank">completely customize each built in-control</a>, but you can extend and mix-and-match platform specific APIs and custom controls. This means that if you have been building and using custom controls in your Xamarin apps you are still able to re-use them in your Xamarin.Forms mobile apps with the concept of a <b>custom renderer</b>. <a href="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/HoloProgressBar1.png"><img class="alignright size-full wp-image-11580" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/HoloProgressBar1.png" alt="HoloProgressBar" width="200" height="338"></a></p>
+<p>Over the past 3 years I have built out a lot of custom controls and one of my favorite has to be this <a href="https://github.com/jamesmontemagno/MonoDroidToolkit/wiki/HoloCircularProgressBar" title="Holo Circular Progress Bar">circular progress bar</a>. It has the look and feel of the built in Android stop watch, but I re-wrote it in C# as part of my <a href="https://www.nuget.org/packages/MonoDroid.Toolkit" title="Xamarin.Android Toolkit" target="_blank">Xamarin.Android Toolkit</a>. Of course I want to re-use this control and others in my Xamarin.Forms apps, so let’s take a look at how to take this pre-existing custom control and make a custom renderer for it.</p>
+<h2>Xamarin.Forms Control</h2>
+<p>There are two main parts to implementing a custom control with a renderer. </p>
+<ol>
+<li>Create your own custom Xamarin.Forms control with bindable properties.
+</li><li>Create a renderer in each platform that will be used to display the custom control and subscribe to property changed notifications.
+</li></ol>
+<p>This means that you can give your custom controls new functionality with the built-in data binding system in Xamarin.Forms. In my shared code project I am going to create a new control that will be used in my pages and layouts called <b>CircularProgress</b> and this will inherit from <b>Xamarin.Forms.View<b>. </b></b></p>
+<div><div id="highlighter_899092" class="syntaxhighlighter  csharp"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="csharp keyword">using</code> <code class="csharp plain">Xamarin.Forms;</code></div><div class="line number2 index1 alt1"><code class="csharp keyword">namespace</code> <code class="csharp plain">CustomProgressBar.CustomControls</code></div><div class="line number3 index2 alt2"><code class="csharp plain">{</code></div><div class="line number4 index3 alt1"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp keyword">public</code> <code class="csharp keyword">class</code> <code class="csharp plain">CircularProgress : View</code></div><div class="line number5 index4 alt2"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp plain">{</code></div><div class="line number6 index5 alt1"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="csharp plain">...</code></div><div class="line number7 index6 alt2"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp plain">}</code></div><div class="line number8 index7 alt1"><code class="csharp plain">}</code></div></div></td></tr></tbody></table></div></div>
+<h2>Bindable Properties</h2>
+<p>The real magic is to implement the two way data binding with custom properties in this class. I can create these with the <b>BindableProperty</b> class which describes what the property is and knows how to trigger a PropertyChanged Notification. Here I will implement just a few such as if the progress bar is indeterminate, the current progress, and what color the bar is.</p>
+<div><div id="highlighter_6601" class="syntaxhighlighter  csharp"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="csharp comments">//Bindable property for the progress color</code></div><div class="line number2 index1 alt1"><code class="csharp keyword">public</code> <code class="csharp keyword">static</code> <code class="csharp keyword">readonly</code> <code class="csharp plain">BindableProperty ProgressColorProperty =</code></div><div class="line number3 index2 alt2"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp plain">BindableProperty.Create&lt;CircularProgress,Color&gt; (p =&gt; p.ProgressColor, Color.Red);</code></div><div class="line number4 index3 alt1"><code class="csharp comments">//Gets or sets the color of the progress bar</code></div><div class="line number5 index4 alt2"><code class="csharp keyword">public</code> <code class="csharp plain">Color ProgressColor {</code></div><div class="line number6 index5 alt1"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp keyword">get</code> <code class="csharp plain">{ </code><code class="csharp keyword">return</code> <code class="csharp plain">(Color)GetValue (ProgressColorProperty); }</code></div><div class="line number7 index6 alt2"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp keyword">set</code> <code class="csharp plain">{ SetValue (ProgressColorProperty, value); }</code></div><div class="line number8 index7 alt1"><code class="csharp plain">}</code></div><div class="line number9 index8 alt2"><code class="csharp plain">...</code></div></div></td></tr></tbody></table></div></div>
+<p>Notice here that I am using the <b>Color</b> property, which is a Xamarin.Forms specific color, that I am setting to Red as the default. I would do the same for other properties that I wan to bind to.</p>
+<h2>Circular Progress Renderer</h2>
+<p>With my new Xamarin.Forms control in place I can now implement the platform specific renderer in my Xamarin.Android project, which I will call <b>CircularProgressRenderer</b>. Each Xamarin.Forms control has a custom renderer that you can inherit from if you are customizing a built in control. However since this is completely custom View I am going to inherit from <b>ViewRenderer</b>.</p>
+<div><div id="highlighter_702598" class="syntaxhighlighter  csharp"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="csharp keyword">namespace</code> <code class="csharp plain">CustomProgressBar.Droid.Renderers</code></div><div class="line number2 index1 alt1"><code class="csharp plain">{</code></div><div class="line number3 index2 alt2"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp keyword">public</code> <code class="csharp keyword">class</code> <code class="csharp plain">CircularProgressRenderer</code></div><div class="line number4 index3 alt1"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="csharp plain">: ViewRenderer&lt;CircularProgress, HoloCircularProgressBar&gt; {</code></div><div class="line number5 index4 alt2"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="csharp plain">...</code></div><div class="line number6 index5 alt1"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp plain">}</code></div><div class="line number7 index6 alt2"><code class="csharp plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p>This type of renderer on Android inherits from View, which means Xamarin.Forms will handle all of the size calculations and normal properties of a standard Android View. All I have to do now is create my custom control and tell the renderer to display it. I can do this in our <b>OnElementChanged</b> method where I have access to two very important properties. </p>
+<ul>
+<li>First is the <b>Element</b>, which is our Xamarin.Forms <b>CircularProgress</b> control I created earlier with custom properties.</li>
+<li>Second is the <b>Control</b> which I am able to set to whatever I would like with the <b>SetNativeControl</b> method.</li>
+</ul>
+<p>Since ViewRenderer is templated, which you can see when I inherited from it my Element and Control already have the correct type of the Xamarin.Forms control and native control that I will be using. This means I will not have to do any casting, which is very nice.</p>
+<div><div id="highlighter_446125" class="syntaxhighlighter  csharp"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="csharp keyword">protected</code> <code class="csharp keyword">override</code> <code class="csharp keyword">void</code> <code class="csharp plain">OnElementChanged (ElementChangedEventArgs&lt;CircularProgress&gt; e){</code></div><div class="line number2 index1 alt1"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp keyword">base</code><code class="csharp plain">.OnElementChanged (e);</code></div><div class="line number3 index2 alt2"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp keyword">if</code> <code class="csharp plain">(e.OldElement != </code><code class="csharp keyword">null</code> <code class="csharp plain">|| </code><code class="csharp keyword">this</code><code class="csharp plain">.Element == </code><code class="csharp keyword">null</code><code class="csharp plain">)</code></div><div class="line number4 index3 alt1"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="csharp keyword">return</code><code class="csharp plain">;</code></div><div class="line number5 index4 alt2"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp plain">var progress = </code><code class="csharp keyword">new</code> <code class="csharp plain">HoloCircularProgressBar (Forms.Context) {</code></div><div class="line number6 index5 alt1"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="csharp plain">Max = Element.Max,</code></div><div class="line number7 index6 alt2"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="csharp plain">Progress = Element.Progress,</code></div><div class="line number8 index7 alt1"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="csharp plain">Indeterminate = Element.Indeterminate,</code></div><div class="line number9 index8 alt2"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="csharp plain">ProgressColor = Element.ProgressColor.ToAndroid(),</code></div><div class="line number10 index9 alt1"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="csharp plain">ProgressBackgroundColor = Element.ProgressBackgroundColor.ToAndroid(),</code></div><div class="line number11 index10 alt2"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="csharp plain">IndeterminateInterval = Element.IndeterminateSpeed };</code></div><div class="line number12 index11 alt1"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp plain">SetNativeControl (progress);</code></div><div class="line number13 index12 alt2"><code class="csharp plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p>Here I am creating a new HoloCircularProgressBar from my own personal library of controls and when created I set all of the controls properties to the Xamarin.Forms control that I created and have access to before I call <b>SetNativeControl</b>. To get the control to show up in the actual view all I need to do is set a special <b>ExportRenderer</b> so Xamarin.Forms knows that my Android project has implemented this control.</p>
+<div><div id="highlighter_168877" class="syntaxhighlighter  csharp"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="csharp plain">[assembly:ExportRenderer(</code><code class="csharp keyword">typeof</code><code class="csharp plain">(CircularProgress), </code><code class="csharp keyword">typeof</code><code class="csharp plain">(CircularProgressRenderer))]</code></div><div class="line number2 index1 alt1"><code class="csharp keyword">namespace</code> <code class="csharp plain">CustomProgressBar.Droid.Renderers</code></div><div class="line number3 index2 alt2"><code class="csharp plain">{</code></div><div class="line number4 index3 alt1"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp plain">...</code></div><div class="line number5 index4 alt2"><code class="csharp plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p>With that in place if I setup my main page in my App.cs and use my new <b>CircularProgress</b> control it now shows up and renders my HoloCircularProgressBar!</p>
+<div><div id="highlighter_867977" class="syntaxhighlighter  csharp"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="csharp keyword">return</code> <code class="csharp keyword">new</code> <code class="csharp plain">ContentPage {</code></div><div class="line number2 index1 alt1"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp plain">Content = </code><code class="csharp keyword">new</code> <code class="csharp plain">CircularProgress {</code></div><div class="line number3 index2 alt2"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="csharp plain">Progress = 25</code></div><div class="line number4 index3 alt1"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp plain">}</code></div><div class="line number5 index4 alt2"><code class="csharp plain">};</code></div></div></td></tr></tbody></table></div></div>
+<p><img src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/Xamarin.Forms-Circular-Progress1.png" alt="Xamarin.Forms Circular Progress" width="200" height="338" class="aligncenter size-full wp-image-11590"></p>
+<h2>Handling Property Changes</h2>
+<p>I can also listen for property changed notifications in my custom control. This means I can react to any action users are performing when interacting with the Xamarin.Forms control. To do this all I need to do is override the <b>OnElementPropertyChanged</b> method, which is triggered whenever any bindable property is changed. The arguments that get passed in contain the property name that changed and I just need to compare it with the properties I set to update the custom control.</p>
+<div><div id="highlighter_384281" class="syntaxhighlighter  csharp"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="csharp keyword">protected</code> <code class="csharp keyword">override</code> <code class="csharp keyword">void</code> <code class="csharp plain">OnElementPropertyChanged (</code><code class="csharp keyword">object</code> <code class="csharp plain">sender, PropertyChangedEventArgs e) {</code></div><div class="line number2 index1 alt1"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp keyword">base</code><code class="csharp plain">.OnElementPropertyChanged (sender, e);</code></div><div class="line number3 index2 alt2"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp keyword">if</code> <code class="csharp plain">(</code><code class="csharp keyword">this</code><code class="csharp plain">.Element == </code><code class="csharp keyword">null</code> <code class="csharp plain">|| </code><code class="csharp keyword">this</code><code class="csharp plain">.Control == </code><code class="csharp keyword">null</code><code class="csharp plain">)</code></div><div class="line number4 index3 alt1"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="csharp keyword">return</code><code class="csharp plain">;</code></div><div class="line number5 index4 alt2"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp keyword">if</code> <code class="csharp plain">(e.PropertyName == CircularProgress.IndeterminateProperty.PropertyName) {</code></div><div class="line number6 index5 alt1"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="csharp plain">Control.Indeterminate = Element.Indeterminate;</code></div><div class="line number7 index6 alt2"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp plain">} </code><code class="csharp keyword">else</code> <code class="csharp keyword">if</code> <code class="csharp plain">(e.PropertyName == CircularProgress.ProgressProperty.PropertyName) {</code></div><div class="line number8 index7 alt1"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="csharp plain">Control.Progress = Element.Progress;</code></div><div class="line number9 index8 alt2"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp plain">}</code></div><div class="line number10 index9 alt1"><code class="csharp spaces">&nbsp;&nbsp;</code><code class="csharp plain">...</code></div><div class="line number11 index10 alt2"><code class="csharp plain">}</code></div></div></td></tr></tbody></table></div></div>
+<h2>Bringing it all together</h2>
+<p>With this code in place, I can now add a few more controls to my page that will allow me to manipulate the control directly. For instance I can add a few buttons to increase or decrease the progress, set it to indeterminate, and even bind a Slider control to change the speed.</p>
+<div><div id="highlighter_141921" class="syntaxhighlighter  csharp"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="csharp plain">var increase = </code><code class="csharp keyword">new</code> <code class="csharp plain">Button { Text = </code><code class="csharp string">"+5"</code> <code class="csharp plain">};</code></div><div class="line number2 index1 alt1"><code class="csharp plain">var decrease = </code><code class="csharp keyword">new</code> <code class="csharp plain">Button { Text = </code><code class="csharp string">"-5"</code> <code class="csharp plain">};</code></div><div class="line number3 index2 alt2"><code class="csharp plain">var indeterminate = </code><code class="csharp keyword">new</code> <code class="csharp plain">Button { Text = </code><code class="csharp string">"Indeterminate"</code> <code class="csharp plain">};</code></div><div class="line number4 index3 alt1"><code class="csharp plain">increase.Clicked += (sender, args) =&gt; progressBar.Progress += 5;</code></div><div class="line number5 index4 alt2"><code class="csharp plain">decrease.Clicked += (sender, args) =&gt; progressBar.Progress -= 5;</code></div><div class="line number6 index5 alt1"><code class="csharp plain">indeterminate.Clicked += (sender, args) =&gt; progressBar.Indeterminate = !progressBar.Indeterminate;</code></div><div class="line number7 index6 alt2"><code class="csharp plain">var slider = </code><code class="csharp keyword">new</code> <code class="csharp plain">Slider (50, 150, 100);</code></div><div class="line number8 index7 alt1"><code class="csharp plain">slider.ValueChanged += (sender, args) =&gt; progressBar.IndeterminateSpeed = (</code><code class="csharp keyword">int</code><code class="csharp plain">)slider.Value;</code></div></div></td></tr></tbody></table></div></div>
+<p><img class="alignright size-full wp-image-11577" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/Circular.gif" alt="Circular Progress Bar Animating n Xamarin.Forms" width="194" height="345">That is it! A fully functional and custom data bound circular progress bar all in around 100 lines of code! Here is what it looks like in action.</p>
+<p>To learn more about customizing your Xamarin.Forms controls and applications be sure to read our <a href="http://developer.xamarin.com/guides/cross-platform/xamarin-forms/" title="Xamarin.Forms Documentation">thorough documentation</a> and you can download the full <a href="https://github.com/jamesmontemagno/Xamarin.Forms-Android-CustomProgressBar" title="Download source code from GitHub" target="_blank">source code for this project from my GitHub</a> including a complete XAML example. </p>
+<p><a href="http://forums.xamarin.com/discussion/18516" title="Discuss in Forums" target="_blank"><em>Discuss this blog post in the Xamarin Forums</em></a></p>
+<p><meta name="twitter:card" content="summary"><meta name="twitter:domain" content="http://blog.xamarin.com"><meta name="twitter:site" content="@xamarinhq"><meta name="twitter:creator" content="@jamesmontemagno"><meta name="twitter:image:src" content="http://blog.xamarin.com/wp-content/uploads/2014/06/HoloProgressBar1.png"><meta name="twitter:title" content="Using Custom Controls in Xamarin.Forms on Android"><meta name="twitter:description" content="Easily add custom controls to your Xamarin.Forms Android applications with this guide."></p>
+<!-- I got these buttons from simplesharebuttons.com --><div id="ssba"><a id="ssba_twitter_share" href="http://twitter.com/share?url=http://blog.xamarin.com/using-custom-controls-in-xamarin.forms-on-android/&text=Using+Custom+Controls+in+Xamarin.Forms+on+Android+" target="_blank"><img title="Twitter" class="ssba" alt="Twitter" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/twitter.png"></a><a id="ssba_facebook_share" href="http://www.facebook.com/sharer.php?u=http://blog.xamarin.com/using-custom-controls-in-xamarin.forms-on-android/" target="_blank"><img title="Facebook" class="ssba" alt="Facebook" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/facebook.png"></a><a id="ssba_google_share" href="https://plus.google.com/share?url=http://blog.xamarin.com/using-custom-controls-in-xamarin.forms-on-android/" target="_blank"><img title="Google+" class="ssba" alt="Google+" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/google.png"></a><a id="ssba_linkedin_share" class="ssba_share_link" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.xamarin.com/using-custom-controls-in-xamarin.forms-on-android/" target="_blank"><img title="Linkedin" class="ssba" alt="LinkedIn" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/linkedin.png"></a><a id="ssba_email_share" href="mailto:?Subject=Using%20Custom%20Controls%20in%20Xamarin.Forms%20on%20Android&Body=%20http://blog.xamarin.com/using-custom-controls-in-xamarin.forms-on-android/"><img title="Email" class="ssba" alt="Email" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/email.png"></a></div>        								        							</div>
+        						</article>
+        			</div>
+                </div>
+                <div class="cell column-sidebar" style="padding: 20px;">
+                    <div id="secondary" class="widget-area" role="complementary">
+	<aside id="search-4" class="widget widget_search"><form method="get" id="searchform" action="http://blog.xamarin.com/">
+	<input type="text" name="s" id="s" placeholder="Search" value="">
+</form></aside><aside id="subscribe2_widget-2" class="widget widget_subscribe2_widget"><h3 class="widget-title">Subscribe</h3>
+    <div class="s2w-widget-pro subscribe2-widget-pro" data-validation-success="Thank you for signing up! Please check your email to confirm your subscription." data-validation-error="Ooops. Please type your email below." data-unsubscribe-message="Please check your email to confirm your subscription removal from Xamarin Blog. We are sorry to see you go!">
+        <p>Enter your email address below to receive Xamarin blog posts in your inbox.</p>
+        <form action="" method="post" class="s2w-form">
+            <input type="hidden" value="202.240.53.142" name="ip" class="s2w-user-up">
+            <label for="s2email">Your email:</label><br><input type="text" onblur="if (this.value == &#39;&#39;) {this.value = &#39;email address&#39;;}" onfocus="if (this.value == &#39;email address&#39;) {this.value = &#39;&#39;;}" value="email address" class="s2w-email" name="email">
+                            <input type="submit" value="Subscribe" name="subscribe" class="s2w-subscribe">
+        </form>
+    </div>
+</aside><aside id="text-3" class="widget widget_text">			<div class="textwidget"><a class="rss" href="http://blog.xamarin.com/feed/">RSS</a></div>
+		</aside><aside id="text-4" class="widget widget_text"><h3 class="widget-title">Elsewhere</h3>			<div class="textwidget"><div class="elsewhere"><a class="facebook" href="https://www.facebook.com/pages/Xamarin/283148898401104">Facebook</a>
+<a class="twitter" href="https://twitter.com/xamarinhq">Twitter</a>
+<a class="github" href="https://github.com/xamarin">Github</a></div></div>
+		</aside></div>                </div>
+            </div>
+		</div>
+	</div>
+	<div id="global-footer">
+    <div class="wrapper">
+        <a href="https://xamarin.com/" class="hexagon"></a>
+        <div class="social-icons show-on-mobile">
+            <a class="facebook" href="http://blog.xamarin.com/using-custom-controls-in-xamarin.forms-on-android/#">Facebook</a>
+            <a class="twitter" href="https://twitter.com/xamarinhq">Twitter</a>
+            <a class="github" href="http://blog.xamarin.com/using-custom-controls-in-xamarin.forms-on-android/#">GitHub</a>
+        </div>
+        <div class="navigation hide-on-mobile">
+            <ul>
+                <li>Products
+                    <ul>
+                        <li><a href="https://xamarin.com/platform">Xamarin Platform</a></li>
+                        <li><a href="https://xamarin.com/test-cloud">Xamarin Test Cloud</a></li>
+                        <li><a href="https://xamarin.com/university">Xamarin University</a></li>
+                        <li><a href="https://xamarin.com/studio">Xamarin Studio</a></li>
+                        <li><a href="https://xamarin.com/visual-studio">Xamarin for Visual Studio</a></li>
+                        <li><a href="https://xamarin.com/forms">Xamarin.Forms</a></li>
+                        <li><a href="http://scan.xamarin.com/">.NET Mobility Scanner</a></li>
+                        <li><a href="https://xamarin.com/prebuilt-apps">Pre-built apps</a></li>
+                        <li><a href="https://xamarin.com/licensing">Mono Commercial Licensing</a></li>
+                    </ul>
+                </li>
+                <li>Company
+                    <ul>
+                        <li><a href="https://xamarin.com/about">About us</a></li>
+                        <li><a href="https://xamarin.com/customers">Customers</a></li>
+                        <li><a href="http://blog.xamarin.com/">Blog</a></li>
+                        <li><a href="https://xamarin.com/support">Support</a></li>
+                        <li><a href="https://xamarin.com/resources">Resources</a></li>
+                        <li><a href="https://xamarin.com/partners">Partners</a></li>
+                        <li><a href="https://xamarin.com/jobs">Jobs</a></li>
+                        <li><a href="https://store.xamarin.com/">Pricing</a></li>
+                        <li><a href="https://xamarin.com/press">Press</a></li>
+                    </ul>
+                </li>
+                <li>Developer center
+                    <ul>
+                        <li><a href="http://developer.xamarin.com/">Get started</a></li>
+                        <li><a href="http://developer.xamarin.com/guides">Guides</a></li>
+                        <li><a href="http://developer.xamarin.com/recipes">Recipes</a></li>
+                        <li><a href="http://iosapi.xamarin.com/">Xamarin.iOS APIs</a></li>
+                        <li><a href="http://androidapi.xamarin.com/">Xamarin.Android APIs</a></li>
+                        <li><a href="http://macapi.xamarin.com/">Xamarin.Mac APIs</a></li>
+                        <li><a href="http://forums.xamarin.com/">Forums</a></li>
+                        <li><a href="http://planet.xamarin.com/">Community blogs</a></li>
+                        <li><a href="https://components.xamarin.com/">Components</a></li>
+                        <li><a href="http://developer.xamarin.com/videos/">Videos</a></li>
+                    </ul>
+                </li>
+                <li>Elsewhere
+                    <ul>
+                        <li><a href="https://twitter.com/xamarinhq">Twitter</a></li>
+                        <li><a href="https://github.com/xamarin">GitHub</a></li>
+                        <li><a href="https://www.facebook.com/xamarinhq">Facebook</a></li>
+                        <li><a href="https://plus.google.com/101300081691995092351/posts">Google+</a></li>
+                        <li><a href="https://www.youtube.com/user/XamarinHQ">YouTube</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <div class="contact">
+                <span class="tel">+1 (855) 926-2746</span>
+                <a class="email" href="mailto:hello@xamarin.com">hello@xamarin.com</a>
+            </div>
+            <div class="legal">
+                <a href="http://blog.xamarin.com/using-custom-controls-in-xamarin.forms-on-android/#">Privacy policy</a>
+                <span>© 2014 Xamarin Inc.</span>
+            </div>
+        </div>
+    </footer>
+</div>
+            <script type="text/javascript">$ = jQuery;</script>
+            <script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/fastclick.js"></script>
+            <script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/bootstrap.min.js"></script>
+            <script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/hisrc.js"></script>
+            <script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/template.js"></script>
+            <script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/janky.post.js"></script>
+            <script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/login.js"></script>
+            <script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/mobile.js"></script>
+		<!-- /// LOAD CHARTBEAT /// -->
+		<script type="text/javascript">
+		var _sf_async_config={};
+		_sf_async_config.uid = 44884;
+		_sf_async_config.useCanonical = true;
+		(function(){
+		  function loadChartbeat() {
+			window._sf_endpt=(new Date()).getTime();
+			var e = document.createElement('script');
+			e.setAttribute('language', 'javascript');
+			e.setAttribute('type', 'text/javascript');
+			e.setAttribute('src',
+			   (("https:" == document.location.protocol) ? "https://" : "http://") +
+			   "static.chartbeat.com/js/chartbeat.js");
+			document.body.appendChild(e);
+		  }
+		  var oldonload = window.onload;
+		  window.onload = (typeof window.onload != 'function') ?
+			 loadChartbeat : function() { try { oldonload(); } catch (e) { loadChartbeat(); throw e} loadChartbeat(); };
+		})();
+		</script>
+		<script type="text/javascript">
+  (function() {
+    window._pa = window._pa || {};
+    // _pa.orderId = "myUser@email.com"; // OPTIONAL: include your user's email address or order ID
+    // _pa.revenue = "19.99"; // OPTIONAL: include dynamic purchase value for the conversion
+    // _pa.onLoadEvent = "sign_up"; // OPTIONAL: name of segment/conversion to be fired on script load
+    var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+    pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/5244a493c9b752f600000087.js";
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+  })();
+</script><script type="text/javascript">
+//<![CDATA[
+jQuery(document).ready(function() {
+	var dialog = jQuery('<div></div>');
+	if (jQuery('a.s2popup').attr('id') === 'unsubscribe') {
+		dialog.html('<form method="post" action="http://blog.xamarin.com/unsubscribe/"><input type="hidden" name="ip" value="202.240.53.142" /><p><label for="s2email">Your email:</label><br /><input type="text" name="email" id="s2email" value="" size="20" /></p><p><input type="submit" name="subscribe" value="Subscribe" /></p></form>');
+	} else if (jQuery('a.s2popup').attr('id') === 'subscribe') {
+		dialog.html('<form method="post" action="http://blog.xamarin.com/unsubscribe/"><input type="hidden" name="ip" value="202.240.53.142" /><p><label for="s2email">Your email:</label><br /><input type="text" name="email" id="s2email" value="" size="20" /></p><p><input type="submit" name="unsubscribe" value="Unsubscribe" /></p></form>');
+	} else {
+		dialog.html('<form method="post" action="http://blog.xamarin.com/unsubscribe/"><input type="hidden" name="ip" value="202.240.53.142" /><p><label for="s2email">Your email:</label><br /><input type="text" name="email" id="s2email" value="" size="20" /></p><p><input type="submit" name="subscribe" value="Subscribe" />&nbsp;<input type="submit" name="unsubscribe" value="Unsubscribe" /></p></form>');
+	}
+	dialog.dialog({autoOpen: false, modal: true, zIndex: 10000, title: 'Subscribe to this blog'});
+	jQuery('a.s2popup').click(function(){
+		dialog.dialog('open');
+		return false;
+	});
+});
+//]]>
+</script>
+<!-- Powered by WPtouch: 3.2.4 --><!-- Cool Video Gallery Script starts here --><!-- Cool Video Gallery Script ends here --><script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/shCore.js"></script>
+<script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/shBrushCSharp.js"></script>
+<script type="text/javascript">
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "http://blog.xamarin.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.83c";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "http://blog.xamarin.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.83c";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<link rel="stylesheet" id="cvg-styles-css" href="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/cvg-styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery.fancybox-css" href="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/jquery.fancybox-1.3.4.css" type="text/css" media="all">
+<script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/jquery.ui.core.min.js"></script>
+<script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/jquery.ui.widget.min.js"></script>
+<script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/jquery.ui.mouse.min.js"></script>
+<script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/jquery.ui.resizable.min.js"></script>
+<script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/jquery.ui.draggable.min.js"></script>
+<script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/jquery.ui.button.min.js"></script>
+<script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/jquery.ui.position.min.js"></script>
+<script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/jquery.ui.dialog.min.js"></script>
+<script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/jwplayer.js"></script>
+<script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/jquery.fancybox-1.3.4.pack.js"></script>
+
+        </div>
+        <div style="position: absolute; left: -9999px; bottom: 0">
+            <!-- Google remarketing -->
+            <script type="text/javascript">
+                /* <![CDATA[ */
+                var google_conversion_id = 1015730972;
+                var google_conversion_language = "en";
+                var google_conversion_format = "3";
+                var google_conversion_color = "ffffff";
+                var google_conversion_label = "j0fWCOywugIQnKar5AM";
+                var google_conversion_value = 0;
+                /* ]]> */
+            </script>
+            <script type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/conversion.js"></script>
+            <noscript>
+                &lt;div style="display:inline;"&gt;
+                    &lt;img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1015730972/?label=j0fWCOywugIQnKar5AM&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+                &lt;/div&gt;
+            </noscript>
+
+            <script type="text/javascript">
+              (function() {
+                window._pa = window._pa || {};
+                // _pa.orderId = "myCustomer@email.com"; // OPTIONAL: attach user email or order ID to conversions
+                // _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
+                var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+                pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/5244a493c9b752f600000087.js";
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+              })();
+            </script>
+
+            <!-- Marketo -->
+            <script type="text/javascript">
+            (function() {
+              var didInit = false;
+              function initMunchkin() {
+                if(didInit === false) {
+                  didInit = true;
+                  Munchkin.init('975-JOX-769');
+                }
+              }
+              var s = document.createElement('script');
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = document.location.protocol + '//munchkin.marketo.net/munchkin.js';
+              s.onreadystatechange = function() {
+                if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                  initMunchkin();
+                }
+              };
+              s.onload = initMunchkin;
+              document.getElementsByTagName('head')[0].appendChild(s);
+            })();
+            </script>
+            <script type="text/javascript">
+              var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
+              analytics.load("7iordhccdt");
+            </script>
+            <script type="text/javascript">
+                        </script>
+            <script type="text/javascript">
+              // Identify the user from store
+              $.ajax('https://store.xamarin.com/xamIdent?t=' + (new Date().getTime()) , {
+                 cache: false,
+                 data: { 'url': window.location.href },
+                 type: 'post',
+                 xhrFields: { withCredentials: true },
+                 dataType: 'json',
+                 success: function(data) {
+                   if (data.success && data.loggedIn && typeof analytics !== 'undefined') {
+                     analytics.identify (data.email, { firstName: data.firstName, lastName: data.lastName, 'Last Visited Blog': new Date () });
+                   }
+                   analytics.track ('Visited Blog Post', { 'Post': 'Using Custom Controls in Xamarin.Forms on Android' });                 },
+                 error: function (jqXHR, textStatus, errorThrown) {
+                   console.log ("error identifying: " + errorThrown);
+                 }
+              });
+            </script>
+            <script type="text/javascript">
+              // Forgive me for what I do here
+              jQuery (document).ajaxComplete (function (evt, xhr, settings) {
+                var url = settings.url; var type = settings.type;
+                if (url == "http://blog.xamarin.com/wp-admin/admin-ajax.php" && type == "POST") {
+                  // OK, we're subscribing...
+                  if (typeof analytics !== 'undefined') {
+                    var subEmail = $ ('.s2w-email').val ();
+                    analytics.identify (subEmail);
+                    analytics.track ('Subscribed To Blog');
+                  }
+                }
+              });
+            </script>
+        </div>
+    
+
+
+<!-- Dynamic page generated in 0.203 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2014-07-02 21:58:52 -->
+
+<!-- Compression = gzip --><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-describedby="ui-id-1" aria-labelledby="ui-id-2" style="display: none; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-2" class="ui-dialog-title">Subscribe to this blog</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" aria-disabled="false" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button></div><div id="ui-id-1" class="ui-dialog-content ui-widget-content" style="display: block;"><form method="post" action="http://blog.xamarin.com/unsubscribe/"><input type="hidden" name="ip" value="202.240.53.142"><p><label for="s2email">Your email:</label><br><input type="text" name="email" id="s2email" value="" size="20"></p><p><input type="submit" name="subscribe" value="Subscribe">&nbsp;<input type="submit" name="unsubscribe" value="Unsubscribe"></p></form></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ d.innerText=i; } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }}catch(e){}</script><script language="javascript" type="text/javascript" src="./Using Custom Controls in Xamarin.Forms on Android   Xamarin Blog_files/chartbeat.js"></script></body></html>

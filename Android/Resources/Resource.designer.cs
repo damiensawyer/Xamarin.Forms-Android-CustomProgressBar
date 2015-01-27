@@ -212,98 +212,98 @@ namespace CustomProgressBar.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int progress_default_circle_color = 2131034112;
+			// aapt resource value: 0x7f040000
+			public const int progress_default_circle_color = 2130968576;
 			
-			// aapt resource value: 0x7f050001
-			public const int progress_default_progress_color = 2131034113;
+			// aapt resource value: 0x7f040001
+			public const int progress_default_progress_color = 2130968577;
 			
-			// aapt resource value: 0x7f050002
-			public const int refractored_background_dark = 2131034114;
+			// aapt resource value: 0x7f040002
+			public const int refractored_background_dark = 2130968578;
 			
-			// aapt resource value: 0x7f050007
-			public const int refractored_background_holo_dark = 2131034119;
+			// aapt resource value: 0x7f040007
+			public const int refractored_background_holo_dark = 2130968583;
 			
-			// aapt resource value: 0x7f050008
-			public const int refractored_background_holo_light = 2131034120;
+			// aapt resource value: 0x7f040008
+			public const int refractored_background_holo_light = 2130968584;
 			
-			// aapt resource value: 0x7f050003
-			public const int refractored_background_light = 2131034115;
+			// aapt resource value: 0x7f040003
+			public const int refractored_background_light = 2130968579;
 			
-			// aapt resource value: 0x7f050004
-			public const int refractored_bright_foreground_dark = 2131034116;
+			// aapt resource value: 0x7f040004
+			public const int refractored_bright_foreground_dark = 2130968580;
 			
-			// aapt resource value: 0x7f050006
-			public const int refractored_bright_foreground_dark_disabled = 2131034118;
+			// aapt resource value: 0x7f040006
+			public const int refractored_bright_foreground_dark_disabled = 2130968582;
 			
-			// aapt resource value: 0x7f05000b
-			public const int refractored_bright_foreground_disabled_holo_dark = 2131034123;
+			// aapt resource value: 0x7f04000b
+			public const int refractored_bright_foreground_disabled_holo_dark = 2130968587;
 			
-			// aapt resource value: 0x7f05000c
-			public const int refractored_bright_foreground_disabled_holo_light = 2131034124;
+			// aapt resource value: 0x7f04000c
+			public const int refractored_bright_foreground_disabled_holo_light = 2130968588;
 			
-			// aapt resource value: 0x7f050009
-			public const int refractored_bright_foreground_holo_dark = 2131034121;
+			// aapt resource value: 0x7f040009
+			public const int refractored_bright_foreground_holo_dark = 2130968585;
 			
-			// aapt resource value: 0x7f05000a
-			public const int refractored_bright_foreground_holo_light = 2131034122;
+			// aapt resource value: 0x7f04000a
+			public const int refractored_bright_foreground_holo_light = 2130968586;
 			
-			// aapt resource value: 0x7f050005
-			public const int refractored_bright_foreground_light = 2131034117;
+			// aapt resource value: 0x7f040005
+			public const int refractored_bright_foreground_light = 2130968581;
 			
-			// aapt resource value: 0x7f05000e
-			public const int refractored_dim_foreground_disabled_holo_dark = 2131034126;
+			// aapt resource value: 0x7f04000e
+			public const int refractored_dim_foreground_disabled_holo_dark = 2130968590;
 			
-			// aapt resource value: 0x7f050011
-			public const int refractored_dim_foreground_disabled_holo_light = 2131034129;
+			// aapt resource value: 0x7f040011
+			public const int refractored_dim_foreground_disabled_holo_light = 2130968593;
 			
-			// aapt resource value: 0x7f05000d
-			public const int refractored_dim_foreground_holo_dark = 2131034125;
+			// aapt resource value: 0x7f04000d
+			public const int refractored_dim_foreground_holo_dark = 2130968589;
 			
-			// aapt resource value: 0x7f050010
-			public const int refractored_dim_foreground_holo_light = 2131034128;
+			// aapt resource value: 0x7f040010
+			public const int refractored_dim_foreground_holo_light = 2130968592;
 			
-			// aapt resource value: 0x7f050013
-			public const int refractored_highlighted_text_holo_dark = 2131034131;
+			// aapt resource value: 0x7f040013
+			public const int refractored_highlighted_text_holo_dark = 2130968595;
 			
-			// aapt resource value: 0x7f050014
-			public const int refractored_highlighted_text_holo_light = 2131034132;
+			// aapt resource value: 0x7f040014
+			public const int refractored_highlighted_text_holo_light = 2130968596;
 			
-			// aapt resource value: 0x7f05000f
-			public const int refractored_hint_foreground_holo_dark = 2131034127;
+			// aapt resource value: 0x7f04000f
+			public const int refractored_hint_foreground_holo_dark = 2130968591;
 			
-			// aapt resource value: 0x7f050012
-			public const int refractored_hint_foreground_holo_light = 2131034130;
+			// aapt resource value: 0x7f040012
+			public const int refractored_hint_foreground_holo_light = 2130968594;
 			
-			// aapt resource value: 0x7f05001e
-			public const int refractored_holo_blue_bright = 2131034142;
+			// aapt resource value: 0x7f04001e
+			public const int refractored_holo_blue_bright = 2130968606;
 			
-			// aapt resource value: 0x7f050018
-			public const int refractored_holo_blue_dark = 2131034136;
+			// aapt resource value: 0x7f040018
+			public const int refractored_holo_blue_dark = 2130968600;
 			
-			// aapt resource value: 0x7f050015
-			public const int refractored_holo_blue_light = 2131034133;
+			// aapt resource value: 0x7f040015
+			public const int refractored_holo_blue_light = 2130968597;
 			
-			// aapt resource value: 0x7f050019
-			public const int refractored_holo_green_dark = 2131034137;
+			// aapt resource value: 0x7f040019
+			public const int refractored_holo_green_dark = 2130968601;
 			
-			// aapt resource value: 0x7f050016
-			public const int refractored_holo_green_light = 2131034134;
+			// aapt resource value: 0x7f040016
+			public const int refractored_holo_green_light = 2130968598;
 			
-			// aapt resource value: 0x7f05001d
-			public const int refractored_holo_orange_dark = 2131034141;
+			// aapt resource value: 0x7f04001d
+			public const int refractored_holo_orange_dark = 2130968605;
 			
-			// aapt resource value: 0x7f05001c
-			public const int refractored_holo_orange_light = 2131034140;
+			// aapt resource value: 0x7f04001c
+			public const int refractored_holo_orange_light = 2130968604;
 			
-			// aapt resource value: 0x7f05001b
-			public const int refractored_holo_purple = 2131034139;
+			// aapt resource value: 0x7f04001b
+			public const int refractored_holo_purple = 2130968603;
 			
-			// aapt resource value: 0x7f05001a
-			public const int refractored_holo_red_dark = 2131034138;
+			// aapt resource value: 0x7f04001a
+			public const int refractored_holo_red_dark = 2130968602;
 			
-			// aapt resource value: 0x7f050017
-			public const int refractored_holo_red_light = 2131034135;
+			// aapt resource value: 0x7f040017
+			public const int refractored_holo_red_light = 2130968599;
 			
 			static Color()
 			{
@@ -318,8 +318,8 @@ namespace CustomProgressBar.Droid
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int progress_inner_size = 2131099648;
+			// aapt resource value: 0x7f050000
+			public const int progress_inner_size = 2131034112;
 			
 			static Dimension()
 			{
@@ -365,53 +365,53 @@ namespace CustomProgressBar.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int bottom = 2130968576;
+			// aapt resource value: 0x7f090000
+			public const int bottom = 2131296256;
 			
-			// aapt resource value: 0x7f040001
-			public const int center = 2130968577;
+			// aapt resource value: 0x7f090001
+			public const int center = 2131296257;
 			
-			// aapt resource value: 0x7f040002
-			public const int center_horizontal = 2130968578;
+			// aapt resource value: 0x7f090002
+			public const int center_horizontal = 2131296258;
 			
-			// aapt resource value: 0x7f040003
-			public const int center_vertical = 2130968579;
+			// aapt resource value: 0x7f090003
+			public const int center_vertical = 2131296259;
 			
-			// aapt resource value: 0x7f040004
-			public const int clip = 2130968580;
+			// aapt resource value: 0x7f090004
+			public const int clip = 2131296260;
 			
-			// aapt resource value: 0x7f040005
-			public const int clip_horizontal = 2130968581;
+			// aapt resource value: 0x7f090005
+			public const int clip_horizontal = 2131296261;
 			
-			// aapt resource value: 0x7f040006
-			public const int clip_vertical = 2130968582;
+			// aapt resource value: 0x7f090006
+			public const int clip_vertical = 2131296262;
 			
-			// aapt resource value: 0x7f040007
-			public const int end = 2130968583;
+			// aapt resource value: 0x7f090007
+			public const int end = 2131296263;
 			
-			// aapt resource value: 0x7f040008
-			public const int fill = 2130968584;
+			// aapt resource value: 0x7f090008
+			public const int fill = 2131296264;
 			
-			// aapt resource value: 0x7f040009
-			public const int fill_horizontal = 2130968585;
+			// aapt resource value: 0x7f090009
+			public const int fill_horizontal = 2131296265;
 			
-			// aapt resource value: 0x7f04000a
-			public const int fill_vertical = 2130968586;
+			// aapt resource value: 0x7f09000a
+			public const int fill_vertical = 2131296266;
 			
-			// aapt resource value: 0x7f04000b
-			public const int left = 2130968587;
+			// aapt resource value: 0x7f09000b
+			public const int left = 2131296267;
 			
-			// aapt resource value: 0x7f04000f
-			public const int myButton = 2130968591;
+			// aapt resource value: 0x7f09000f
+			public const int myButton = 2131296271;
 			
-			// aapt resource value: 0x7f04000c
-			public const int right = 2130968588;
+			// aapt resource value: 0x7f09000c
+			public const int right = 2131296268;
 			
-			// aapt resource value: 0x7f04000d
-			public const int start = 2130968589;
+			// aapt resource value: 0x7f09000d
+			public const int start = 2131296269;
 			
-			// aapt resource value: 0x7f04000e
-			public const int top = 2130968590;
+			// aapt resource value: 0x7f09000e
+			public const int top = 2131296270;
 			
 			static Id()
 			{
@@ -426,11 +426,11 @@ namespace CustomProgressBar.Droid
 		public partial class Integer
 		{
 			
-			// aapt resource value: 0x7f070001
-			public const int circular_indeterminent_interval = 2131165185;
+			// aapt resource value: 0x7f060001
+			public const int circular_indeterminent_interval = 2131099649;
 			
-			// aapt resource value: 0x7f070000
-			public const int progressbutton_indeterminent_interval = 2131165184;
+			// aapt resource value: 0x7f060000
+			public const int progressbutton_indeterminent_interval = 2131099648;
 			
 			static Integer()
 			{
@@ -461,11 +461,11 @@ namespace CustomProgressBar.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f090001
-			public const int app_name = 2131296257;
+			// aapt resource value: 0x7f080001
+			public const int app_name = 2131230721;
 			
-			// aapt resource value: 0x7f090000
-			public const int hello = 2131296256;
+			// aapt resource value: 0x7f080000
+			public const int hello = 2131230720;
 			
 			static String()
 			{
@@ -480,17 +480,17 @@ namespace CustomProgressBar.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f080002
-			public const int CircularProgressBar = 2131230722;
+			// aapt resource value: 0x7f070002
+			public const int CircularProgressBar = 2131165186;
 			
-			// aapt resource value: 0x7f080003
-			public const int CircularProgressBarLight = 2131230723;
+			// aapt resource value: 0x7f070003
+			public const int CircularProgressBarLight = 2131165187;
 			
-			// aapt resource value: 0x7f080000
-			public const int ProgressButton = 2131230720;
+			// aapt resource value: 0x7f070000
+			public const int ProgressButton = 2131165184;
 			
-			// aapt resource value: 0x7f080001
-			public const int ProgressButton_Pin = 2131230721;
+			// aapt resource value: 0x7f070001
+			public const int ProgressButton_Pin = 2131165185;
 			
 			static Style()
 			{

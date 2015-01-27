@@ -3,6 +3,9 @@ using CustomProgressBar.CustomControls;
 
 namespace CustomProgressBar
 {
+	/// <summary>
+	/// Note that this class is just another way of doing what is done in the XAML... see app.cs to choose which one. 
+	/// </summary>
 	public class ProgressBarCodeBehind : ContentPage
 	{
 		public ProgressBarCodeBehind ()
@@ -14,8 +17,8 @@ namespace CustomProgressBar
 				HeightRequest = 300
 			};
 
-			var increase = new Button { Text = "+5" };
-			var decrease = new Button { Text = "-5" };
+			var increase = new Button { Text = "+5 cbehind" };
+			var decrease = new Button { Text = "-5 cbehind" };
 			var indeterminate = new Button { Text = "Indeterminate" };
 
 			increase.Clicked += (sender, args) => progressBar.Progress += 5;
